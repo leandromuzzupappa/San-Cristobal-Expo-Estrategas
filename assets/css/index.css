@@ -195,3 +195,20 @@ body {
   cursor: pointer;
   z-index: 100;
 }
+
+#imprimir {
+  width: 287px;
+  border: 1px solid red;
+}
+
+#imprimir p {
+  font-size: 20px;
+}
+
+#imprimir p span {
+  font-weight: 700;
+}
+
+#imprimir p strong {
+  font-size: 48px;
+}

@@ -31,9 +31,19 @@ if ( !empty($data['nombre']) && !empty($data['apellido']) && !empty($data['razon
     }
 
     $numeroSorteado = getRandomNumber();
+    // Check if the number has already taken
+    $numeroSorteado = handleNumeroSorteado ($connect, $numeroSorteado);
 
-    
+    $_SESSION['nombre'] = $nombre;
+    $_SESSION['apellido'] = $apellido;
+    $_SESSION['razonSocial'] = $razonSocial;
+    $_SESSION['tipoDocumento'] = $tipoDocumento;
+    $_SESSION['numeroDocumento'] = $numeroDocumento;
+    $_SESSION['correo'] = $correo;
+    $_SESSION['numeroSorteado'] = $numeroSorteado;
 
+    header("Location: ../../gracias.php?enviado");
+    var_dump($_SESSION);
 } else {
     echo 'no entro';
     //header('Location: ../../gracias.php?error');

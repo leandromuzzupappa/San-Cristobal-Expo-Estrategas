@@ -196,3 +196,17 @@ body {
     cursor: pointer;
     z-index: 100;
 }
+
+#imprimir {
+    width: 287px;
+    border: 1px solid red;
+    p {
+        font-size: 20px;
+        span {
+            font-weight: 700;
+        }
+        strong {
+            font-size: 48px;
+        }
+    }
+}
