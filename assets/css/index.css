@@ -96,6 +96,10 @@ body {
   color: #001630;
 }
 
+#Home .Main form input, #Home .Main form select {
+  text-transform: capitalize;
+}
+
 #Home .Main form input::placeholder, #Home .Main form select::placeholder {
   font-family: "gotham-light";
   font-weight: 300;
@@ -198,7 +202,11 @@ body {
 
 #imprimir {
   width: 287px;
-  border: 1px solid red;
+  display: none;
+}
+
+#imprimir .Header {
+  margin-bottom: 20px;
 }
 
 #imprimir p {
@@ -207,6 +215,7 @@ body {
 
 #imprimir p span {
   font-weight: 700;
+  color: #434242;
 }
 
 #imprimir p strong {

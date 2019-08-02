@@ -94,6 +94,7 @@ body {
                 color: #001630;
             }
             input, select {
+                text-transform: capitalize;
                 &::placeholder {
                     font-family: $gotham-light;
                     font-weight: 300;
@@ -199,11 +200,17 @@ body {
 
 #imprimir {
     width: 287px;
-    border: 1px solid red;
+    //border: 1px solid red;
+    display: none;
+    .Header {
+        margin-bottom: 20px;
+    }
     p {
         font-size: 20px;
+        //padding: 0 15px;
         span {
             font-weight: 700;
+            color: #434242;
         }
         strong {
             font-size: 48px;

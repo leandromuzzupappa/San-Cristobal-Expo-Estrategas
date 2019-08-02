@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="./assets/vendor/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/index.min.css">
+    <link rel="stylesheet" href="./assets/css/print.min.css" media="print">
 
 </head>
 <body>

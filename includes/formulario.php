@@ -34,7 +34,7 @@
 
     <div class="form-group">
         <label for="correo">Correo electrónico</label>
-        <input type="email" class="form-control" name="correo" id="correo" placeholder="nombre@email.com">
+        <input type="email" class="form-control" name="correo" id="correo" placeholder="nombre@email.com" style="text-transform: lowercase;">
     </div>
 
     <div class="form-group">

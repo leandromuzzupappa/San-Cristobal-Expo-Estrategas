@@ -146,8 +146,22 @@
 
 </div>
 
+<div id="imprimir">
+    <?php if(isset($_SESSION)):?>
+        <p id="sNombre">
+            <span>Nombre y Apellido:</span> <br> <?php echo $_SESSION['nombre'].' '.$_SESSION['apellido']?>
+        </p>
+        <p id="sNumeroDocumento">
+            <span>Número de Documento:</span> <br> <?php echo $_SESSION['tipoDocumento'].' '.$_SESSION['numeroDocumento']?>
+        </p>
+        <p id="sNumeroSorteado">
+            <span>Número Aignado:</span> <br> <strong><?php echo $_SESSION['numeroSorteado']?></strong>
+        </p>
+    <?php endif;?>
+</div>
+
 <script>
-    window.open("./imprimir.php", "", "width=100, height=100");
+    window.print();
 </script>
 
 <?php include './includes/footer.php' ?>
