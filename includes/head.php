@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./assets/vendor/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/index.min.css">
     <link rel="stylesheet" href="./assets/css/print.min.css" media="print">
+    <link rel="stylesheet" href="./assets/css/sorteo.min.css">
 
 </head>
 <body>

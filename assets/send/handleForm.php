@@ -9,7 +9,6 @@ define('hr', '<hr>');
 $data = $_POST;
 
 if ( !empty($data['nombre']) && !empty($data['apellido']) && !empty($data['razonSocial']) && !empty($data['tipoDocumento_']) && !empty($data['numeroDocumento']) && !empty($data['correo']) ) {
-    echo 'entro';
 
     if ( $data['nombre'] != '' ) {
         $nombre = $data['nombre'];
@@ -42,9 +41,18 @@ if ( !empty($data['nombre']) && !empty($data['apellido']) && !empty($data['razon
     $_SESSION['correo'] = $correo;
     $_SESSION['numeroSorteado'] = $numeroSorteado;
 
-    header("Location: ../../gracias.php?enviado");
-    var_dump($_SESSION);
+    if ( !empty($_SESSION['nombre']) && !empty($_SESSION['apellido']) && !empty($_SESSION['razonSocial']) && !empty($_SESSION['tipoDocumento']) && !empty($_SESSION['numeroDocumento']) && !empty($_SESSION['correo']) && !empty($_SESSION['numeroSorteado']) ) {
+        $sendUser = "INSERT INTO usuarios VALUES (null, '$nombre', '$apellido', '$razonSocial', '$tipoDocumento', '$numeroDocumento', '$correo', '$numeroSorteado')";
+        $sendQuery = mysqli_query($connect, $sendUser);
+
+        session_destroy();
+        header("Location: ../../gracias.php?enviado");
+    } else {
+        header("Location: ../../gracias.php?error%20en%20la%20consulta");
+        session_destroy();
+    }
+
 } else {
-    echo 'no entro';
-    //header('Location: ../../gracias.php?error');
+    session_destroy();
+    header('Location: ../../gracias.php?error');
 }

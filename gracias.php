@@ -161,7 +161,10 @@
 </div>
 
 <script>
-    window.print();
+    //window.print();
+    setTimeout(() => {
+        location.href = 'index.php';
+    }, 2000);
 </script>
 
 <?php include './includes/footer.php' ?>

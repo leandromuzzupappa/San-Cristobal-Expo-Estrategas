@@ -12,4 +12,5 @@ CREATE TABLE usuarios (
 )ENGINE=InnoDb;
 
 INSERT INTO usuarios VALUES (null, 'Noelia', 'Torres', 'Woooonkeh', 'DNI', '123456789', 'nt@woonky.com', '1234');
-INSERT INTO usuarios VALUES (null, 'Luis', 'Bertola', 'Luigi', 'DNI', '39986860', 'lb@luigi.com', '2345');
+INSERT INTO usuarios VALUES (null, 'Luis', 'Bertola', 'Luigi', 'DNI', '2132444', 'lb@luigi.com', '3221');
+INSERT INTO usuarios VALUES (null, 'Orion', 'Torres', 'Woonky ori', 'DNI', '31232141', 'ot@torres.com', '4573');
