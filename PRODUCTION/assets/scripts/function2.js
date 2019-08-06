@@ -27,8 +27,8 @@ $(document).ready(function(){
 		$("#log").html("");
 		loadout.css("left","100%");
 		if(users.length < 10){
-			insert_times = 11;
-			duration_time = 10000;
+			insert_times = 20;
+			duration_time = 5000;
 		}else{
 			insert_times = 10;
 			duration_time = 10000;
